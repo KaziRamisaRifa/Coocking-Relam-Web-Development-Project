@@ -1,0 +1,371 @@
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");  /*for fb,insta etc logo*/
+
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+  font-family: sans-serif;
+}
+
+/*Navigation Bar*/
+nav{
+  background: #000205;
+  height: 80px;
+  width: 100%;
+}
+
+/*Logo section*/
+label.logo{
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a{
+  color: white;
+  font-size: 15px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+/*For Button Type*/
+a.active,a:hover{
+  background: #ae422f;
+  transition: .5s;
+}
+
+/*Side Button*/
+.checkbtn{
+  font-size: 25px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 35px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #3498DB;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #17171a;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+
+/*Background picture Section*/
+.bground{
+  display: flex;
+  justify-content: center;    /*vertically center*/
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-image:linear-gradient(#879096, #879096), url("Image/pic 1.jpg");  /*Linear gradient for giving a orange vibe*/
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: multiply;    /*For Orange Vibe, blend mode*/
+}
+
+/* background text section*/
+.bground__text{
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+/*for h1 section*/
+.bground__text h1{
+  font-size: 60px;
+  font-weight: 400;
+}
+/*for p section*/
+.bground__text p{
+  letter-spacing: 6px;
+}
+/*read recipes button text design*/
+.botton,
+.botton2 {
+  display: inline-block;
+
+  color: #fff;
+  text-decoration: none;
+  padding: 15px 25px;
+  border-radius: 100px;      /*for round border*/
+  font-size: 14px;
+  letter-spacing: 1px;
+  transition: all 0.4s;
+}
+.botton{
+  background-color: #080707;
+}
+/*Making botton click*/
+.botton:hover{
+  background-color: #fff;
+  color: #1c1a19;
+}
+.margin__top{
+  margin-top: 15px;
+}
+
+/*Features Section*/
+.Special__Features{
+  padding: 70px 15px;
+  background-color: #070d29;
+}
+.title{
+  background-color: black;
+  text-align: center;
+  padding: 10px 0px;
+  border-radius: 50px;
+  transition: all .4s;
+  margin-top: -70px;
+}
+.title h2{
+  color:#fff;
+}
+.Features__image{
+  position: relative;
+  width:100%;
+  height: 100%;
+  background-color: black;
+  overflow: hidden;
+  border-radius: 2px;
+}
+.Features__image img{
+   width: 100%;
+   max-height: 100%;
+   height: auto;
+   transition: all 0.4s;
+}
+.Features__image:hover img{
+  transform: scale(1.2,1.2);
+  cursor: pointer;
+}
+.Features__image-text{
+  padding: 30px 15px;
+  max-height:150px;
+  position: absolute;
+  bottom:0px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7) ;   /*rgba for Making transparent*/
+  color:#fff;
+}
+.Features__image-text h3{
+  color: #f4511e;
+  font-size: 20px;
+  font-weight: 500;
+}
+.Features__image-text p{
+  line-height: 25px;
+}
+
+/*About Cooking Realm section*/
+.About_Cooking_realm{
+  padding: 50px;
+  background-color: #312b7a;
+  color:#fafafc;
+  margin-top: -70px;
+
+}
+.image__responsive{
+  width:100%;
+  max-height: 100%;
+  height: auto;
+  border-radius: 50%;
+
+}
+.About_Cooking_realm h4{
+  font-size: 40px;
+  font: 500px;
+}
+.About_Cooking_realm p{
+  line-height: 40px;
+  font-weight: 200;
+}
+
+/*More Features Section*/
+.More__Features{
+  padding: 50px 0;
+  background-color: #69aabf;
+}
+
+.image__responsive2{
+  width:100%;
+  max-height: 100%;
+  height: auto;
+}
+.bg__dark{
+  background-color: #395b66;
+  padding: 50px 0;
+}
+.text__light{
+  color: #fff;
+}
+.More__Features h3{
+  font-size: 20px;
+  font-weight: 500;
+}
+.More__Features p{
+  line-height: 36px;
+}
+.botton2{
+background-color: #f4511e;
+}
+.botton2:hover{
+  background-color: black;
+  color: #ebf0f2;
+}
+
+/*Developed By Section*/
+.Developed__By{
+padding: 70px 15px;
+background-color: #0d354f;
+min-height: 100vh;
+
+}
+.container{
+  max-width: 1170px;
+  margin:auto;
+}
+.row{
+   display: flex;
+   flex-wrap: wrap;
+}
+.section-title{
+  flex-basis: 100%;
+  max-width: 100%;
+  margin-bottom: 70px;
+}
+.section-title h1{
+  font-size: 40px;
+  text-align: center;
+  color:white;
+  font-weight: 700;
+
+}
+.section-title p{
+  font-size: 20px;
+  text-align: center;
+  color:white;
+  padding:  2px 3px;
+}
+.team-members{
+  flex-basis: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.member{
+  flex-basis: 30%;
+  max-width: 30%;
+  transition: all .4s;
+}
+
+.member img{
+  height:260px;
+  width: 260px;
+  border-radius: 50%;
+  filter: grayscale(100%);
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.member img:hover{
+filter: grayscale(0);
+transform: translateY(-10px);
+}
+
+.inner{
+  position: relative;
+  z-index: 11;
+  padding: 15px 15px;
+}
+.info{
+  background-color: black;
+  text-align: center;
+  padding: 20px 15px;
+  border-radius: 8px;
+  transition: all .4s;
+  margin-top: -40px;
+}
+.info:hover{
+transform: translateY(-20px);
+}
+.info h5{
+  font-size: 18px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  color: #fff;
+}
+.info p{
+  font-size: 16px;
+  font-weight: 100;
+  padding: 15px 10px;
+  color:#c5c5c5;
+}
+.social-links{
+  padding-top: 10px;
+}
+
+.social-links a{
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+  background-color: #fff;
+  color: #4d26a3;
+  border-radius: 50px;
+  margin: 0 2px;
+  text-align: center;
+  line-height: 32px;
+  font-size: 16px;
+}
