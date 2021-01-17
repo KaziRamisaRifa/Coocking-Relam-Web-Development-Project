@@ -1,0 +1,49 @@
+#content{
+ width: 50%;
+ margin: 20px auto;
+ border: 1px solid #cbcbcb;
+}
+form{
+ width: 50%;
+ margin: 20px auto;
+}
+form div{
+ margin-top: 5px;
+}
+
+#img_div{
+ width: 80%;
+ padding: 5px;
+ margin: 15px auto;
+ border: 1px solid #cbcbcb;
+}
+#img_div:after{
+ content: "";
+ display: block;
+ clear: both;
+}
+img{
+ float: left;
+ margin: 5px;
+ width: 300px;
+ height: 140px;
+}
+.botton {
+  display: inline-block;
+
+  color: #fff;
+  text-decoration: none;
+  padding: 15px 25px;
+  border-radius: 100px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  transition: all 0.4s;
+}
+.botton{
+  background-color: #080707;
+}
+
+.botton:hover{
+  background-color: #fff;
+  color: #1c1a19;
+}
