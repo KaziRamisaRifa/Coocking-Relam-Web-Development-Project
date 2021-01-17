@@ -1,5 +1,5 @@
 <?php
-include 'connection.php';
+//include 'connection.php';
 
 ?>
 <!DOCTYPE html>
@@ -23,10 +23,10 @@ include 'connection.php';
 <div class="main">
     <form name="signform" class="" action="signup.php" method="POST" onsubmit="return validateForm();">
 
-      <h2 class="name">Name</h2>
-              <input class="firstname" type="text" name="first_name" placeholder="Enter your first name"> 
+      <h2 class="name"> First Name</h2>
+              <input class="firstname" type="text" name="first_name" placeholder="Enter your first name">
 
-<h2 class="name">Name</h2>
+<h2 class="name">Last Name</h2>
               <input class="lastname" type="text" name="last_name" placeholder="Enter your last Name">
 
 
