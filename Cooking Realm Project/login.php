@@ -18,7 +18,7 @@ include 'connection.php';
       <?php include 'header.php';?>
                 </header>
 
-                <div class="bground">
+                <div class="loginBground">
 
                 <div id='AppendHere'></div>
 <!--start login form-->
