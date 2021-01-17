@@ -7,13 +7,13 @@ body {
   font-family:sans-serif;
 }
 
-.bground{
+.loginBground{
   display: flex;
   justify-content: center;    /*vertically center*/
   align-items: center;
   width: 100%;
   height: 100vh;
-  background-image:linear-gradient(#1e2430, #1e2430), url("Image/login1.jpg");  /*Linear gradient for giving a orange vibe*/
+  background: url("Image/login1.jpg") no-repeat;  /*Linear gradient for giving a orange vibe here*/
   background-position: center;
   background-size: cover;
   background-blend-mode: multiply;    /*For Orange Vibe, blend mode*/
