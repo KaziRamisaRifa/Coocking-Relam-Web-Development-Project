@@ -5,12 +5,13 @@
 
 
 body {
-  background-image: url(https://i.pinimg.com/originals/ef/47/f4/ef47f4c663869a49bdb6c70155e055a3.jpg);
+  background: url("Image/login1.jpg") no-repeat;
   background-position: center;
   background-size: cover;
   font-family: san-serif;
-  
+
 }
+
 
 .signform {
   width: 800px;
@@ -58,8 +59,8 @@ form {
 
 .lastname {
   position: relative;
-  left: 417px;
-  top: -80px;
+  left: 200px;
+  top: -37px;
   line-height: 40px;
   border-radius: 6px;
   padding: 0 22px;
@@ -67,28 +68,11 @@ form {
   color: #555;
 }
 
-.firstlabel {
-  position: relative;
-  color: #e5e5e5;
-  text-transform: capitalize;
-  font-size: 14px;
-  left: 203px;
-  top: -45px;
-}
-
-.lastlabel {
-  position: relative;
-  color: #e5e5e5;
-  text-transform: capitalize;
-  font-size: 14px;
-  left: 175px;
-  top: -45px;
-}
 
 .username {
   position: relative;
   left: 200px;
-  top: -37px;
+  top: -30px;
   line-height: 40px;
   border-radius: 6px;
   padding: 0 22px;
@@ -122,43 +106,14 @@ form {
 .code {
   position: relative;
   left: 200px;
-  top: -37px;
+  top: -30px;
   line-height: 40px;
-  width: 95px;
   border-radius: 6px;
   padding: 0 22px;
   font-size: 16px;
-  color: #555;
-}
-.number {
-  position: relative;
-  left: 200px;
-  top: -37px;
-  line-height: 40px;
-  width: 255px;
-  border-radius: 6px;
-  padding: 0 22px;
-  font-size: 16px;
-  color: #555;
 }
 
-.area-code {
-  position: relative;
-  color: #E5E5E5;
-  text-transform: capitalize;
-  font-size: 16px;
-  left: 54px;
-  top: -4px;
-}
 
-.phone-number {
-  position: relative;
-  color: #E5E5E5;
-  text-transform: capitalize;
-  font-size: 16px;
-  left: -100px;
-  top: -2px;
-}
 
 .password{
   position: relative;
@@ -217,9 +172,9 @@ form {
 Button {
   background-color: #3BAF9F;
   display: block;
-  margin: 20px 0px 0px 20px;
+  margin: 200px 0px 0px 20px;
   text-align: center;
-  border-radius: 12px;
+  border-radius: 10px;
   border: 2px solid #366473;
   padding: 14px 110px;
   outline: none;
@@ -230,4 +185,7 @@ Button {
 
 button:hover {
   background-color: #5390F5;
+}
+.container{
+  text-align: center;
 }
