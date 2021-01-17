@@ -1,89 +1,68 @@
 <?php
-session_start();
-if(!empty($_SESSION["username"]))
-{
-      if($_SESSION["username"] =="admin")
-      {
-        header('Location: admin_profile.php');
-      }else{
-//        header('Location: user_profile.php');
-  header('Location: Dashboard.php');
-      }
-}
-require 'connection.php';
-if(isset($_POST['username']) && isset($_POST['password']))
-{
-    $username = $_POST['username'];
-    $password = $_POST['password'];
-    $login_user ="select * from user where User_Name='$username' && Password ='$password'";
-    $result = $conn->query($login_user);
-    if ($result->num_rows > 0) {
-      while($row = $result->fetch_assoc()) {
-        $_SESSION["username"] = $row['username'];
+include 'connection.php';
 
-      }
-      if($username =="admin")
-      {
-        header('Location: admin_profile.php');
-      }else{
-      //  header('Location: user_profile.php');
-        header('Location: Dashboard.php');
-      }
-    }else{
-      echo "<script>alert('wrong username & Password')</script>";
-    }
-
-}
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <!-- style.css-->
+    <link rel="stylesheet" href="CSS/style3.css">
 
-<head>
-        <title>Login</title>
- <link rel="stylesheet" type="text/css" href="style.css">
-        <style type="text/css">
-            body {
-                background-color: lightgreen;
-            }
+    <!-- Bootstrap Grid System-->
+    <link rel="stylesheet" href="CSS/bootstrap-grid.css">
+  </head>
+  <body>
+    <header>
+      <?php include 'header.php';?>
+                </header>
 
-            input {
-                left: 100px;
-            }
-        </style>
-</head>
-<body>
-<header>
-  <?php include 'header.php';?>
-            </header>
-        <div>
-                        <form action="login.php" method="post">
+                <div class="bground">
 
+                <div id='AppendHere'></div>
+<!--start login form-->
+<form id="loginform" action="#"><!--action="the site link"-->
+  <!--start header-->
+  <h1>LOG IN</h1>
 
-                                <label for="username">Username:</label>
-                                <input type="text" class="form-control" id="username" name="username" required placeholder="Username">
+    <!--site link-->
+    <!--end site-->
 
-                                <label for="password">Password:</label>
-                                <input type="password" id="password" name="password" required placeholder="Password">
+    <div class="input-info">
+        <!--the input div containe the information of the user-->
+        <i class="fa fa-user"></i>
+        <!--user name-->
+        <input type="text" placeholder="User-Name">
+        <i class="fa fa-envelope"></i>
+        <!--user email-->
+        <input type="email" placeholder="E-mail" required autocomplete="off" validate>
+        <i class="fa fa-lock"></i>
+        <!--yser password-->
+        <input type="password" placeholder="Password">
+        <!--the checkbox to make the browser remember the user-->
+        <input type="checkbox">
+        <span>Remember Me</span><br>
+    </div>
 
-                                <input type="checkbox" onclick="myFunction()"> &nbsp;Show Password
-                            <button type="submit">Log In</button>
-                        </form>
+    <div class="log-sign"><!--the login button and the sign up button>[to the sign up page]-->
+        <button class="login" form="loginform"><i class="fa fa-mail-forward (alias)"></i> Log In</button><!--log in-->
 
+            <button class="signup" form="signupform"><i class="fa fa-plus"></i> Sign Up</button>
 
-                        <p>Return to <a href="index.php">Home Page</a></p>
-                    </div>
-      <footer>  <?php include 'footer.php';?></footer>
-</body>
+    </div><!--end of the log-sign-->
 
+    <div class="social-media"><!--sign up by fb and tw-->
+    <button class="btn1"> <i class="fa fa-facebook"></i> Sign up with google</a>
+    </button>
+
+    <button class="btn2"> <i class="fa fa-google"></i> Sign up with facebook</a>
+    </button>
+  </div>
+
+  <p class="forget-password">If you forget your password please <a href="#">click here</a></p>
+
+</form>
+</div>
+  </body>
 </html>
-<script type="text/javascript">
-    function myFunction() {
-        var x = document.getElementById("password");
-        if (x.type === "password") {
-            x.type = "text";
-        } else {
-            x.type = "password";
-        }
-    }
-
-</script>
