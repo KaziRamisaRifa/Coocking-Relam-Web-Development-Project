@@ -6,13 +6,12 @@ include 'connection.php';
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-wiidth,initial-scale=1">
     <title>Sign Up</title>
 
     <!-- style.css-->
     <link rel="stylesheet" href="CSS/signup.css">
 
-    <!-- Bootstrap Grid System-->
-    <link rel="stylesheet" href="CSS/bootstrap-grid.css">
   </head>
   <body>
     <header>

@@ -162,7 +162,7 @@ a.active,a:hover{
   background-color: #070d29;
 }
 .title{
-  background-color: black;
+  background-color: #424657;
   text-align: center;
   padding: 10px 0px;
   border-radius: 50px;
@@ -208,30 +208,6 @@ a.active,a:hover{
   line-height: 25px;
 }
 
-/*About Cooking Realm section*/
-.About_Cooking_realm{
-  padding: 50px;
-  background-color: #312b7a;
-  color:#fafafc;
-  margin-top: -70px;
-
-}
-.image__responsive{
-  width:100%;
-  max-height: 100%;
-  height: auto;
-  border-radius: 50%;
-
-}
-.About_Cooking_realm h4{
-  font-size: 40px;
-  font: 500px;
-}
-.About_Cooking_realm p{
-  line-height: 40px;
-  font-weight: 200;
-}
-
 /*More Features Section*/
 .More__Features{
   padding: 50px 0;
@@ -263,109 +239,4 @@ background-color: #f4511e;
 .botton2:hover{
   background-color: black;
   color: #ebf0f2;
-}
-
-/*Developed By Section*/
-.Developed__By{
-padding: 70px 15px;
-background-color: #0d354f;
-min-height: 100vh;
-
-}
-.container{
-  max-width: 1170px;
-  margin:auto;
-}
-.row{
-   display: flex;
-   flex-wrap: wrap;
-}
-.section-title{
-  flex-basis: 100%;
-  max-width: 100%;
-  margin-bottom: 70px;
-}
-.section-title h1{
-  font-size: 40px;
-  text-align: center;
-  color:white;
-  font-weight: 700;
-
-}
-.section-title p{
-  font-size: 20px;
-  text-align: center;
-  color:white;
-  padding:  2px 3px;
-}
-.team-members{
-  flex-basis: 100%;
-  max-width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-.member{
-  flex-basis: 30%;
-  max-width: 30%;
-  transition: all .4s;
-}
-
-.member img{
-  height:260px;
-  width: 260px;
-  border-radius: 50%;
-  filter: grayscale(100%);
-  cursor: pointer;
-  transition: 400ms;
-}
-
-.member img:hover{
-filter: grayscale(0);
-transform: translateY(-10px);
-}
-
-.inner{
-  position: relative;
-  z-index: 11;
-  padding: 15px 15px;
-}
-.info{
-  background-color: black;
-  text-align: center;
-  padding: 20px 15px;
-  border-radius: 8px;
-  transition: all .4s;
-  margin-top: -40px;
-}
-.info:hover{
-transform: translateY(-20px);
-}
-.info h5{
-  font-size: 18px;
-  font-weight: 100;
-  letter-spacing: 2px;
-  color: #fff;
-}
-.info p{
-  font-size: 16px;
-  font-weight: 100;
-  padding: 15px 10px;
-  color:#c5c5c5;
-}
-.social-links{
-  padding-top: 10px;
-}
-
-.social-links a{
-  display: inline-block;
-  height: 32px;
-  width: 32px;
-  background-color: #fff;
-  color: #4d26a3;
-  border-radius: 50px;
-  margin: 0 2px;
-  text-align: center;
-  line-height: 32px;
-  font-size: 16px;
 }
