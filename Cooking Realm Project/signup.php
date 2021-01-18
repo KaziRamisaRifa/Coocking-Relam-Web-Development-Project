@@ -6,7 +6,8 @@ include 'connection.php';
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Sign Up</title>
+    
     <!-- style.css-->
     <link rel="stylesheet" href="CSS/style2.css">
 

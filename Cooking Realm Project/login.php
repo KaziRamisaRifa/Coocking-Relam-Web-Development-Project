@@ -1,14 +1,15 @@
 <?php
 include 'connection.php';
-
 ?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
-    <!-- style.css-->
-    <link rel="stylesheet" href="CSS/style3.css">
+    <title>Log In</title>
+
+    <!-- login.css-->
+    <link rel="stylesheet" href="CSS/login.css">
 
     <!-- Bootstrap Grid System-->
     <link rel="stylesheet" href="CSS/bootstrap-grid.css">

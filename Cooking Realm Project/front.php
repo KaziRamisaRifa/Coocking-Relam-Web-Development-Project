@@ -88,26 +88,9 @@
             </div>
           </div>
 
-          <!-- About Cooking realm section-->
-          <div class="About_Cooking_realm">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-3">
-                  <div class="image__background">
-                    <img src="Images/food.jpg" class="image__responsive">
-                  </div>
-                </div>
-              <div class="col-md-8">
-                <h4>About Cooking Realm</h4>
-                <p> Cooking is a process that often becomes a great pastime for many people. Here you can find a vast number of recipes, learn diffent cooking skills and upload recipes along with photos of the dish. There are many exciting events and contests for the users. Moreover, a user can buy membership and get many benefits than the regular user.  </p>
-              <a href="#" class="botton">See More</a>
-              </div>
-              </div>
 
-            </div>
 
-          </div>
-
+          <!-- More Features section-->
           <div class="More__Features">
 
                   <!-- container-Some padding in left and right side-->
@@ -154,78 +137,6 @@
 
           </div>
 
-          <!-- Developed section-->
-          <div class="Developed__By">
-          <div class="container">
-            <div class="row">
-              <div class="section-title">
-                <h1>Designed And Developed By</h1>
-                <p>We strategically design and develop websites that elevate your brand and communicate your message effectively. </p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="team-members">
-
-                <div class="member">
-                  <img src="Images/member1.jpg">
-
-                  <div class="inner">
-                    <div class="info">
-                      <h5>Farida Yeasmin Mim</h5>
-                      <p>Designer</p>
-                      <div class="social-links">
-                        <a href=""><span class="fa fa-facebook"></span></a>
-                        <a href=""><span class="fa fa-instagram"></span></a>
-                        <a href=""><span class="fa fa-twitter"></span></a>
-                        <a href=""><span class="fa fa-linkedin"></span></a>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-
-                <div class="member">
-                  <img src="Images/member2.jpg">
-
-                  <div class="inner">
-                    <div class="info">
-                      <h5>Kazi Ramisa Rifa</h5>
-                      <p>Designer</p>
-                      <div class="social-links">
-                        <a href=""><span class="fa fa-facebook"></span></a>
-                        <a href=""><span class="fa fa-instagram"></span></a>
-                        <a href=""><span class="fa fa-twitter"></span></a>
-                        <a href=""><span class="fa fa-linkedin"></span></a>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-
-                <div class="member">
-                  <img src="Images/Abid.jpg">
-
-                  <div class="inner">
-                    <div class="info">
-                      <h5>Abid Hossain Fahim</h5>
-                      <p>Designer</p>
-                      <div class="social-links">
-                        <a href=""><span class="fa fa-facebook"></span></a>
-                        <a href=""><span class="fa fa-instagram"></span></a>
-                        <a href=""><span class="fa fa-twitter"></span></a>
-                        <a href=""><span class="fa fa-linkedin"></span></a>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-
-              </div>
-
-            </div>
-
-          </div>
-          </div>
-
+          
   </body>
 </html>
