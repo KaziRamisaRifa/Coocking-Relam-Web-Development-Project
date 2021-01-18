@@ -6,6 +6,7 @@ include 'connection.php';
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-wiidth,initial-scale=1">
     <title>Log In</title>
 
     <!-- login.css-->
