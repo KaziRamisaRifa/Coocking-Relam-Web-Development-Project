@@ -12,11 +12,8 @@
   </head>
   <body>
 
-    
-    <!-- FeedBack section-->
-    <div class="FeedBack">
 
-    </div>
+    
 
 
   </body>
