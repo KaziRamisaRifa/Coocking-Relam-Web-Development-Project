@@ -7,9 +7,9 @@ include 'connection.php';
   <head>
     <meta charset="utf-8">
     <title>Sign Up</title>
-    
+
     <!-- style.css-->
-    <link rel="stylesheet" href="CSS/style2.css">
+    <link rel="stylesheet" href="CSS/signup.css">
 
     <!-- Bootstrap Grid System-->
     <link rel="stylesheet" href="CSS/bootstrap-grid.css">
@@ -27,7 +27,7 @@ include 'connection.php';
       <h2 class="name"> First Name</h2>
               <input class="firstname" type="text" name="first_name" placeholder="Enter your first name">
 
-<h2 class="name">Last Name</h2>
+       <h2 class="name">Last Name</h2>
               <input class="lastname" type="text" name="last_name" placeholder="Enter your last Name">
 
 
