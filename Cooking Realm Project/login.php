@@ -66,5 +66,10 @@ include 'connection.php';
 
 </form>
 </div>
+
+<?php
+include 'footer.php';
+?>
+
   </body>
 </html>
