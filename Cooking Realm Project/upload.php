@@ -15,6 +15,7 @@
     $dish_type = mysqli_real_escape_string($conn, $_POST['dish_type']);
     $dish_details = mysqli_real_escape_string($conn, $_POST['dish_details']);
 
+
     $sql = "SELECT User_Name FROM user";
 $result = mysqli_query($conn,$sql);
 
@@ -22,10 +23,10 @@ if (mysqli_num_rows($result) > 0) {
   // output data of each row
   while($row = mysqli_fetch_assoc($result)) {
     $UserName= $row["User_Name"];
-    // Check if the username and the password they entered was correct
+    // Check if the username they entered was correct
     if ($UserName == $user_name) {
-      $sql = "INSERT INTO contestant (Image, User_Name, Dish_Name, Dish_Type, Dish_Details)
-      VALUES ('$image', '$user_name' ,'$dish_name', '$dish_type', '$dish_details');";
+      $sql = "INSERT INTO contestant (Image, User_Name, Dish_Name, Dish_Type, Dish_Details, Score)
+      VALUES ('$image', '$user_name' ,'$dish_name', '$dish_type', '$dish_details','0');";
       mysqli_query($conn, $sql);
 
       $sql = "SELECT u.User_ID
@@ -67,10 +68,31 @@ WHERE User_Name='$user_name' ";
 
 
   if (isset($_POST['vote'])) {
+$contestantid = strip_tags($_POST['vote_code']);
+$sql = "SELECT Contestant_ID FROM contestant";
+$result = mysqli_query($conn,$sql);
+
+if (mysqli_num_rows($result) > 0) {
+  // output data of each row
+  while($row = mysqli_fetch_assoc($result)) {
+    $contestant_id= $row["Contestant_ID"];
+    // Check if the username they entered was correct
+    if ($contestant_id == $contestantid) {
+      $sql = "UPDATE contestant
+SET Score=Score+1
+WHERE Contestant_ID='$contestant_id' ";
+      // execute query
+      mysqli_query($conn, $sql);
+    }
+
+  }
+
+}
     header("Location: user_login.php");
   }
 $result = mysqli_query($conn, "SELECT * FROM contestant");
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -92,17 +114,27 @@ $result = mysqli_query($conn, "SELECT * FROM contestant");
     while ($row = mysqli_fetch_array($result)) {
       echo "<div id='img_div'>";
       	echo "<img src='images/".$row['Image']."' >";
-        echo "<h4>User Name: </h4>";
+        echo "<h4>Made By: </h4>";
       	echo "<p>".$row['User_Name']."</p>";
         echo "<h4>Dish Name: </h4>";
       	echo "<p>".$row['Dish_Name']."</p>";
         echo "<h4>Dish Type: </h4>";
         echo "<p>".$row['Dish_Type']."</p>";
-        echo "<h4>Dish Details: </h4>";
-        echo "<p>".$row['Dish_Details']."</p>";
         echo "<form method='POST' action='upload.php' >";
-        echo "<button type='submit' name='vote'>Vote</button>";
-        echo "</from>";
+        echo "<br><br><h4>Dish Details: </h4>";
+        echo "<p>".$row['Dish_Details']."</p>";
+        echo "<h4>Score: </h4>";
+        echo "<p>".$row['Score']."</p>";
+        echo "<h4>Code for vote: </h4>";
+        echo "<p>".$row['Contestant_ID']."</p>";
+        echo "<textarea
+        	id='text'
+        	cols='20'
+        	rows='1'
+        	name='vote_code'
+        	placeholder='Code for vote'></textarea><br>";
+        echo "<button type='submit' name='vote'>Vote Now</button>";
+        echo "</form>";
       echo "</div>";
     }
 
