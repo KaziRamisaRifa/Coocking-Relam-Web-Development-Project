@@ -19,7 +19,7 @@ if (mysqli_num_rows($result) > 0) {
     $Pass= $row["Password"] ;
     // Check if the username and the password they entered was correct
     if ($UserName == $dbUsname && $Email == $dbEmail && $Pass == $dbpass) {
-        header("Location: index.php");
+  header("Location: user_profile.php?id=$UserName");
     } else {
     // Display the alert box
     echo "<script>
@@ -56,7 +56,7 @@ if (mysqli_num_rows($result) > 0) {
 
                 <div id='AppendHere'></div>
 <!--start login form-->
-<form id="loginform" method="POST" action="user_login.php" enctype="multipart/form-data"><!--action="the site link"-->
+<form id="loginform" method="POST" action="user_login.php" id="" enctype="multipart/form-data"><!--action="the site link"-->
   <!--start header-->
   <h1>LOG IN</h1>
 
