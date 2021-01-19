@@ -69,27 +69,16 @@ WHERE User_Name='$user_name' ";
 
   if (isset($_POST['vote'])) {
 $contestantid = strip_tags($_POST['vote_code']);
-$sql = "SELECT Contestant_ID FROM contestant";
-$result = mysqli_query($conn,$sql);
-
-if (mysqli_num_rows($result) > 0) {
-  // output data of each row
-  while($row = mysqli_fetch_assoc($result)) {
-    $contestant_id= $row["Contestant_ID"];
-    // Check if the username they entered was correct
-    if ($contestant_id == $contestantid) {
-      $sql = "UPDATE contestant
+$sql = "UPDATE contestant
 SET Score=Score+1
-WHERE Contestant_ID='$contestant_id' ";
-      // execute query
-      mysqli_query($conn, $sql);
-    }
+WHERE Contestant_ID='$contestantid' ";
+// execute query
+mysqli_query($conn, $sql);
 
-  }
 
 }
-    header("Location: user_login.php");
-  }
+
+
 $result = mysqli_query($conn, "SELECT * FROM contestant");
 ?>
 
@@ -108,6 +97,11 @@ $result = mysqli_query($conn, "SELECT * FROM contestant");
 <body>
   <header>
     <?php include 'header.php';?>
+    <style>
+h1 {
+  text-align: center;
+}</style>
+    <h1> Contest </h1>
               </header>
 <div id="content">
   <?php
