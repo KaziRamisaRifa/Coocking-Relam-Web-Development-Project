@@ -10,7 +10,7 @@ include 'connection.php';
     <title>Log In</title>
 
     <!-- login.css-->
-    <link rel="stylesheet" href="CSS/login.css">
+    <link rel="stylesheet" href="CSS/admin_login.css">
 
     <!-- Bootstrap Grid System-->
     <link rel="stylesheet" href="CSS/bootstrap-grid.css">
@@ -35,7 +35,7 @@ include 'connection.php';
         <!--the input div containe the information of the user-->
         <i class="fa fa-user"></i>
         <!--user name-->
-        <input type="text" placeholder="User-Name">
+        <input type="text" placeholder="Admin Name">
         <i class="fa fa-envelope"></i>
         <!--user email-->
         <input type="email" placeholder="E-mail" required autocomplete="off" validate>
@@ -50,19 +50,13 @@ include 'connection.php';
     <div class="log-sign"><!--the login button and the sign up button>[to the sign up page]-->
         <button class="login" form="loginform"><i class="fa fa-mail-forward (alias)"></i> Log In</button><!--log in-->
 
-            <button class="signup" form="signupform"><i class="fa fa-plus"></i> Sign Up</button>
+
 
     </div><!--end of the log-sign-->
 
-    <div class="social-media"><!--sign up by fb and tw-->
-    <button class="btn1"> <i class="fa fa-facebook"></i> Sign up with google</a>
-    </button>
 
-    <button class="btn2"> <i class="fa fa-google"></i> Sign up with facebook</a>
-    </button>
-  </div>
 
-  <p class="forget-password">If you forget your password please <a href="#">click here</a></p>
+  <br><br><p class="forget-password">If you forget your password please <a href="#">click here</a></p>
 
 </form>
 </div>

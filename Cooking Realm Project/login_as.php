@@ -7,7 +7,7 @@ include 'connection.php';
     <meta charset="utf-8">
     <title></title>
 
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/login_as.css">
 
     <!-- Bootstrap Grid System-->
     <link rel="stylesheet" href="CSS/bootstrap-grid.css">
