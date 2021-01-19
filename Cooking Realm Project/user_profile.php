@@ -1,66 +1,38 @@
 <?php
-include 'connection.php';
+  // Create database connection
+  include 'connection.php';
 
-session_start();
-if(empty($_SESSION["username"]))
-{
-  header('Location: login_renter.php');
-}else{
-  if($_SESSION["username"] == "admin")
-  {
-    header('Location: admin_profile.php');
-  }
-}
+$username =  $_GET['id'];
 
-$username = $_SESSION["username"];
-$retrieve = "SELECT * FROM renters r WHERE r.username = '".$username."'";
-$retrieve = mysqli_query($conn, $retrieve);
 
-$ret = mysqli_fetch_array($retrieve);
-
-$rid  =  $ret['renterID'];
-
-$fullname = $ret['fullname'];
 
 ?>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="CSS/user_profile.css">
 
-    <!DOCTYPE html>
-    <html>
-        <head>
-            <title>
-                <?php echo $username?> | Profile | Find Nest</title>
-            <link rel="stylesheet" type="text/css" href="style.css">
-            <style type="text/css">
-                body {
-                    background-color: navajowhite;
-                }
+    <!-- Bootstrap Grid System-->
+    <link rel="stylesheet" href="CSS/bootstrap-grid.css">
+  </head>
+  <body>
+    <header>
+      <?php include 'header.php';?>
+    </header>
 
-                table {
-                    width: 100%;
-                    left: 10px;
-                    text-align: center;
-                }
-            </style>
-        </head>
-    <body>
-        <?php
-           include 'header.php';
-         ?>
-            <h1>Find Nest | Profile</h1>
-            <h1>Welcome <?php echo $username?> |</h1>
-            <h1>Welcome <?php echo $fullname?> |</h1>
-            <div>
-                <ol>
-                    <li><a href="view_profile_renter.php" target="_blank">View Profile</a></li>
-                    <li><a href="edit_profile_renter.php" target="_blank">Edit Profile</a></li>
-                    <li><a href="view_houses.php" target="_blank">View Houses</a></li>
-                    <li><a href="booking.php" target="_blank">Manual Add to Fabourite</a></li>
-                    <li><a href="view_favourites_renter.php" target="_blank">View Favourites</a></li>
-                </ol>
-            </div>
 
-            <?php
-            include 'footer.php';
-            ?>
-    </body>
-    </html>
+<div class="card">
+
+  <h1>Welcome <?php echo $username ?>! </h1>
+
+  <p></p>
+
+  <p><button>Edit Profile</button></p><br>
+  <p><button>Contest</button></p><br>
+  <p><button>View Favourites</button></p><br>
+</div>
+
+  </body>
+</html>
