@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 17, 2021 at 01:36 PM
+-- Generation Time: Jan 20, 2021 at 11:06 AM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.11
 
@@ -20,28 +20,6 @@ SET time_zone = "+00:00";
 --
 -- Database: `cooking_realm`
 --
-
--- --------------------------------------------------------
-
---
--- Table structure for table `contact`
---
-
-CREATE TABLE `contact` (
-  `Name` varchar(50) NOT NULL,
-  `Email` varchar(50) NOT NULL,
-  `Comments` varchar(200) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `contact`
---
-
-INSERT INTO `contact` (`Name`, `Email`, `Comments`) VALUES
-('Kazi Ramisa Rifa', 'kazi.rifa@northsouth.edu', 'I love this Site. '),
-('Rifa', 'ramisa.rifa09@gmail.com', 'Wonderful Site'),
-('Rifa', 'ramisa.rifa09@gmail.com', 'Wonderful Site'),
-('rifa', 'ramisa.rifa09@gmail.com', 'Cooooookinggggg');
 
 -- --------------------------------------------------------
 
@@ -67,8 +45,8 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`User_ID`, `User_Name`, `First_Name`, `Last_Name`, `Date_of_birth`, `Country`, `Contact_Number`, `Email`, `Password`, `Premium_ID`) VALUES
-(1, 'rifa', 'Ramisa', 'Rifa', '2000-01-29', 'Bangladesh', '018796484', 'ramisa.rifa09@gmail.com', 'abcd1234', NULL),
-(2, 'mimdim', 'Mim', 'Dim', '2000-11-01', 'Japan', '0128689469', 'mimdim@cookingrealm.com', '1234abcd', NULL),
+(1, 'Ramisa', 'Ramisa', 'Rifa', '2000-01-29', 'Bangladesh', '018796484', 'ramisa.rifa09@gmail.com', 'abcd1234', NULL),
+(2, 'Mim', 'Mim', 'Yeasmin', '2000-11-01', 'Japan', '0128689469', 'mimdim@cookingrealm.com', '1234abcd', NULL),
 (3, 'MimRami', 'Ramisa', 'Mim', '2000-02-02', 'Kuwait', '002020202', 'mramim@gmail.com', 'MimRamisa', NULL),
 (5, 'AnkiBaby', 'Ankita', 'Baby', '1955-04-05', 'Germany', '03939393993', 'anki.baby@gmail.com', 'ramisa', NULL);
 
