@@ -22,11 +22,10 @@ include 'connection.php';
 
 </head>
 	<body>
-
-      <header>
-        <?php include 'header.php';?>
-      </header>
-
+    <header>
+      <?php include 'header.php';?>
+    </header>
+    
 		<footer class="footer-distributed">
 
 <!-- footer.left-->
