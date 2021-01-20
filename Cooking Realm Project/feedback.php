@@ -33,8 +33,8 @@ if (mysqli_num_rows($result) > 0) {
 
 
       $sql = "UPDATE feedback
-SET User_ID='$dbUserid'
-WHERE User_Name='$dbUsname' ";
+      SET User_ID='$dbUserid'
+      WHERE User_Name='$dbUsname' ";
       // execute query
       mysqli_query($conn, $sql);
         header("Location: user_login.php");

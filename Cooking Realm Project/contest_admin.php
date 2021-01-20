@@ -30,16 +30,17 @@
 
     if (isset($_POST['winner'])) {
       $contestid = strip_tags($_POST['winner_code']);
-    $sql = "SELECT User_Name, MAX(Score)
-FROM contestant
-WHERE Contest_ID='$contestid'
-GROUP BY User_Name;";
+    $sql = "SELECT User_Name
+            FROM contestant
+            WHERE Contest_ID='$contestid' AND Score=(SELECT MAX(Score)
+                                            FROM contestant
+                                            WHERE Contest_ID='$contestid');";
     $result =  mysqli_query($conn, $sql);
     $row = mysqli_fetch_assoc($result);
     $UserName= $row["User_Name"];
 
     $sql = "UPDATE contest
-SET Contest_Winner='$UserName' && Contest_Status='Inactive'
+SET Contest_Winner='$UserName', Contest_Status='Inactive'
 WHERE Contest_ID='$contestid' ";
 mysqli_query($conn, $sql);
 
@@ -95,6 +96,7 @@ h1 {
         echo "<p>".$row['Contest_Details']."</p>";
         echo "<h4>Contest Code: </h4>";
         echo "<p>".$row['Contest_ID']."</p>";
+        echo "<h4><br>Delete Contest: </h4>";
         echo "<textarea
         	id='text'
         	cols='25'
@@ -102,13 +104,14 @@ h1 {
         	name='contest_code'
         	placeholder='Type contest code'></textarea><br>";
         echo "<button type='submit' name='del_contest'>Delete Contest</button>";
+        echo "<h4><br>Declare Winner: </h4>";
         echo "<textarea
         	id='text'
         	cols='25'
         	rows='1'
         	name='winner_code'
         	placeholder='Type contest code'></textarea><br>";
-        echo "<h4><br>Declare Winner: </h4>";
+
         echo "<button type='submit' name='winner'>Press To Declare</button>";
         echo "</form>";
       echo "</div>";

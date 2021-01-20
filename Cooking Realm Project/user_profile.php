@@ -29,7 +29,7 @@ $username =  $_GET['id'];
 
   <p></p>
 
-  <p><button>Edit Profile</button></p><br>
+  <p><button><?php echo "<a href='edit_profile.php?id=$username'>" ?>Edit Profile</button></p><br>
   <p><button>Contest</button></p><br>
   <p><button>View Favourites</button></p><br>
 </div>

@@ -2,33 +2,38 @@ body{
   font-family: sans-serif;
 }
 /*Background picture Section*/
-.loginBground{
+.bground{
   display: flex;
   justify-content: center;    /*vertically center*/
   align-items: center;
   width: 100%;
   height: 100vh;
-  background-image:linear-gradient(#d4a650, #d4a650),url("Image/loginas3.jpg");  /*Linear gradient for giving a orange vibe*/
+  background-image:linear-gradient(#879096, #879096), url("Image/Error.jpg");  /*Linear gradient for giving a orange vibe*/
   background-position: center;
   background-size: cover;
   background-blend-mode: multiply;    /*For Orange Vibe, blend mode*/
 }
 
 /* background text section*/
-.loginBground__text{
+.bground__text{
   color: #fff;
   text-align: center;
   text-transform: uppercase;
 }
 /*for h1 section*/
-.loginBground__text h1{
+.bground__text h1{
   font-size: 60px;
   font-weight: 400;
 }
-
+/*for p section*/
+.bground__text p{
+  letter-spacing: 6px;
+}
 /*read recipes button text design*/
-.Botton{
+.botton,
+.botton2 {
   display: inline-block;
+
   color: #fff;
   text-decoration: none;
   padding: 15px 25px;
@@ -37,11 +42,11 @@ body{
   letter-spacing: 1px;
   transition: all 0.4s;
 }
-.Botton{
+.botton{
   background-color: #080707;
 }
 /*Making botton click*/
-.Botton:hover{
+.botton:hover{
   background-color: #fff;
   color: #1c1a19;
 }

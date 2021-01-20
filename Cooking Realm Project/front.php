@@ -35,7 +35,8 @@
                     <img src="Images/second.jpg">
                     <div class="Features__image-text">
                       <h3>Food Blogs</h3>
-                      <p>Best Food & Cooking Blogs With Simple and Tasty Recipes Of The World </p>
+                      <a href="recipes.php">
+                      <p>Best Food & Cooking Blogs With Simple and Tasty Recipes Of The World </p></a>
                     </div>
                   </div>
                 </div>
@@ -111,7 +112,7 @@
                         </div>
                       </div>
 
-                   <!-- 2.Membership Section-->
+                   <!-- 2.Certificate Section-->
                       <div class="col-md-6 mb-4">
                         <div class="row bg__dark text__light p-3">
                           <div class="col-md-4">
@@ -129,6 +130,13 @@
                   </div>
                 </div>
               </div>
+
+
+
+          <!-- FeedBack section-->
+          <div class="FeedBack">
+
+          </div>
 
 
   </body>

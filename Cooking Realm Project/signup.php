@@ -1,6 +1,71 @@
 <?php
 include 'connection.php';
 
+if(isset($_POST['sign'])){
+
+$fname = mysqli_real_escape_string($conn, $_POST['first_name']);
+$lname = mysqli_real_escape_string($conn, $_POST['last_name']);
+$uname = mysqli_real_escape_string($conn, $_POST['username']);
+$birth = mysqli_real_escape_string($conn, $_POST['birth']);
+$contact = mysqli_real_escape_string($conn, $_POST['phone']);
+$country = mysqli_real_escape_string($conn, $_POST['country']);
+$email = mysqli_real_escape_string($conn, $_POST['email']);
+$pass = mysqli_real_escape_string($conn, $_POST['pass']);
+
+//INSERT INTO `user`( `User_Name`, `First_Name`, `Last_Name`, `Date_of_birth`, `Country`, `Contact_Number`, `Email`, `Password`, `Premium_ID`) VALUES ([value-1],[value-2],[value-3],[value-4],[value-5],[value-6],[value-7],[value-8],[value-9],[value-10])
+$sql = "SELECT User_Name,Email,Contact_Number FROM user";
+$result = mysqli_query($conn,$sql);
+
+if (mysqli_num_rows($result) > 0) {
+// output data of each row
+while($row = mysqli_fetch_assoc($result)) {
+$UserName= $row["User_Name"];
+$dbEmail= $row["Email"];
+$Contact_number= $row["Contact_Number"];
+// Check if the username they entered was correct
+if ($UserName == $uname && $dbEmail== $email  && $Contact_number == $contact) {
+
+  if($UserName == $uname)
+  {
+    echo "<script>
+  alert('Same User Name Exist! Try Another User Name');
+  window.location.href='signup.php';
+  </script>";
+}else if($dbEmail== $email)
+{
+  echo "<script>
+alert('Same User Email Exist! Input Another Email');
+window.location.href='signup.php';
+</script>";
+}else if($Contact_number == $contact)
+{
+  echo "<script>
+alert('Same User Contact Number Exist! Input Another Contact Number');
+window.location.href='signup.php';
+</script>";
+}else {
+  echo "<script>
+alert('Same User Input Exist! Input Unique User Input');
+window.location.href='signup.php';
+</script>";
+}
+
+  }
+
+}
+}
+ $sql="INSERT INTO user(User_Name, First_Name, Last_Name, Date_of_birth, Country, Contact_Number, Email, Password)
+VALUES ('$uname','$fname','$lname','$birth','$country','$contact','$email','$pass')";
+mysqli_query($conn, $sql);
+
+
+}
+
+
+
+
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -21,7 +86,7 @@ include 'connection.php';
     <div class="signform"> <h1>SIGN UP FORM</h1> </div>
 
 <div class="main">
-    <form name="signform" class="" action="signup.php" method="POST" onsubmit="return validateForm();">
+    <form name="signform" class="" action="signup.php" method="POST" >
 
       <h2 class="name"> First Name</h2>
               <input class="firstname" type="text" name="first_name" placeholder="Enter your first name">
@@ -79,38 +144,12 @@ include 'connection.php';
       </label>
 
 
-      <button type="submit">Submit</button>
+      <button type="submit" name="sign">Submit</button>
 </div>
 
 
 
 </div>
-<?php
-if(isset($_POST['username'])){
-$fname = $_POST['first_name'];
-$lname = $_POST['last_name'];
-$uname = $_POST['username'];
-$birth = $_POST['birth'];
-$contact = $_POST['phone'];
-$country = $_POST['country'];
-$email = $_POST['email'];
-$pass = $_POST['pass'];
-
-//INSERT INTO `user`( `User_Name`, `First_Name`, `Last_Name`, `Date_of_birth`, `Country`, `Contact_Number`, `Email`, `Password`, `Premium_ID`) VALUES ([value-1],[value-2],[value-3],[value-4],[value-5],[value-6],[value-7],[value-8],[value-9],[value-10])
-
-if($fname != ""){
-if (mysqli_query($conn,  "INSERT INTO user(User_Name, First_Name, Last_Name, Date_of_birth, Country, Contact_Number, Email, Password)
-VALUES ('$uname','$fname','$lname','$birth','$country','$contact','$email','$pass')")) {
-echo "New record created successfully";
-} else {
-echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-}
-}
-
-
-mysqli_close($conn);
-}
-?>
 
   </body>
 </html>

@@ -91,5 +91,9 @@ if (mysqli_num_rows($result) > 0) {
 </form>
 </div>
 
+<?php
+include 'footer.php';
+?>
+
   </body>
 </html>

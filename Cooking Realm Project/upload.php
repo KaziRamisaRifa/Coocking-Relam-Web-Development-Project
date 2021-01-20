@@ -44,7 +44,7 @@ WHERE User_Name='$user_name' ";
       // execute query
       mysqli_query($conn, $sql);
       $target = "images/".basename($image);
-
+header("Location: upload.php?id=$contestid");
     	}
 
     }
@@ -123,7 +123,7 @@ h1 {
 
   ?>
 
-  <form method="POST" action="upload.php" enctype="multipart/form-data"  >
+  <form method="POST" action="upload.php?<?php echo "id=$contestid" ?>" enctype="multipart/form-data"  >
   	<input type="hidden" name="size" value="1000000">
   	<div>
   	  <input type="file" name="image">
