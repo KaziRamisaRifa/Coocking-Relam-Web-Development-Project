@@ -78,7 +78,7 @@ include 'connection.php';
          No
       </label>
 
-]
+
       <button type="submit">Submit</button>
 </div>
 
@@ -108,13 +108,8 @@ echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
 
 
-
 mysqli_close($conn);
 }
-?>
-
-<?php
-include 'footer.php';
 ?>
 
   </body>
