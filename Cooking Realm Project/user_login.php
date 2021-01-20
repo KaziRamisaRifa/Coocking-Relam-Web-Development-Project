@@ -69,6 +69,10 @@ if (mysqli_num_rows($result) > 0) {
         <!--user name-->
         <input type="text" name="username" placeholder="User-Name">
         <i class="fa fa-envelope"></i>
+
+        <!--user email-->
+        <input type="email" name="email" placeholder="E-mail" required autocomplete="off" validate>
+        <i class="fa fa-lock"></i>
         
         <!--yser password-->
         <input type="password" name="password" placeholder="Password">
