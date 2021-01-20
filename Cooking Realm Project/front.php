@@ -131,12 +131,5 @@
               </div>
 
 
-
-          <!-- FeedBack section-->
-          <div class="FeedBack">
-
-          </div>
-
-
   </body>
 </html>
