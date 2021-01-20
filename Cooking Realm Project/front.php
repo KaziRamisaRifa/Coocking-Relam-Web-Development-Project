@@ -111,7 +111,7 @@
                         </div>
                       </div>
 
-                   <!-- 2.Certificate Section-->
+                   <!-- 2.Membership Section-->
                       <div class="col-md-6 mb-4">
                         <div class="row bg__dark text__light p-3">
                           <div class="col-md-4">
@@ -137,6 +137,6 @@
 
           </div>
 
-          
+
   </body>
 </html>
