@@ -32,15 +32,15 @@
       $contestid = strip_tags($_POST['winner_code']);
     $sql = "SELECT User_Name, MAX(Score)
 FROM contestant
-WHERE Contestant_ID='$contestid'
+WHERE Contest_ID='$contestid'
 GROUP BY User_Name;";
     $result =  mysqli_query($conn, $sql);
-    $row = mysqli_fetch_array($result);
+    $row = mysqli_fetch_assoc($result);
     $UserName= $row["User_Name"];
 
     $sql = "UPDATE contest
-SET Contest_Winner='$UserName'
-WHERE User_Name='$UserName' ";
+SET Contest_Winner='$UserName' && Contest_Status='Inactive'
+WHERE Contest_ID='$contestid' ";
 mysqli_query($conn, $sql);
 
 
