@@ -14,7 +14,6 @@ include 'connection.php';
 
   </head>
   <body>
-
     <header>
       <?php include 'header.php';?>
     </header>
@@ -27,24 +26,24 @@ include 'connection.php';
     <div class="About_Cooking_realm">
       <div class="container">
         <div class="row">
-          <div class="col-md-3">
+
+          <div class="col-md-2">
             <div class="image__background">
               <img src="Images/food.jpg" class="image__responsive">
             </div>
           </div>
+
         <div class="col-md-8">
           <h4>About Cooking Realm</h4>
-          <p> Cooking is a process that often becomes a great pastime for many people. Here you can find a vast number of recipes, learn diffent cooking skills and upload recipes along with photos of the dish. There are many exciting events and contests for the users. Moreover, a user can buy membership and get many benefits than the regular user.  </p>
-        <a href="#" class="botton">See More</a>
+           <p> Cooking is a process that often becomes a great pastime for many people. Here you can find a vast number of recipes, learn diffent cooking skills and upload recipes along with photos of the dish. There are many exciting events and contests for the users. Moreover, a user can buy membership and get many benefits than the regular user.</p>
+          <a href="#" class="botton">See More</a>
         </div>
+
         </div>
 
       </div>
     </div>
 
-    <?php
-    include 'footer.php';
-    ?>
-    
+
   </body>
 </html>
