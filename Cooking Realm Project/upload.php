@@ -2,8 +2,8 @@
   // Create database connection
   include 'connection.php';
 
-  // Initialize message variable
-  $msg = "";
+$contestid =  $_GET['id'];
+
 
   // If upload button is clicked ...
   if (isset($_POST['upload'])) {
@@ -25,8 +25,8 @@ if (mysqli_num_rows($result) > 0) {
     $UserName= $row["User_Name"];
     // Check if the username they entered was correct
     if ($UserName == $user_name) {
-      $sql = "INSERT INTO contestant (Image, User_Name, Dish_Name, Dish_Type, Dish_Details, Score)
-      VALUES ('$image', '$user_name' ,'$dish_name', '$dish_type', '$dish_details','0');";
+      $sql = "INSERT INTO contestant (Image, Contest_ID, User_Name, Dish_Name, Dish_Type, Dish_Details, Score)
+      VALUES ('$image','$contestid', '$user_name' ,'$dish_name', '$dish_type', '$dish_details','0');";
       mysqli_query($conn, $sql);
 
       $sql = "SELECT u.User_ID
@@ -45,17 +45,6 @@ WHERE User_Name='$user_name' ";
       mysqli_query($conn, $sql);
       $target = "images/".basename($image);
 
-
-    /*	$sql = "INSERT INTO contestant (Image, User_ID, User_Name Dish_Name, Dish_Type, Dish_Details)
-      VALUES ('$image','$Userid', '$user_name' ,'$dish_name', '$dish_type', '$dish_details')";
-    	// execute query
-    	mysqli_query($conn, $sql);*/
-
-
-      /*if (move_uploaded_file($_FILES['image']['tmp_name'], $target)) {
-    		$msg = "Image uploaded successfully";
-    	}else{
-    		$msg = "Failed to upload image";*/
     	}
 
     }
@@ -79,7 +68,7 @@ mysqli_query($conn, $sql);
 }
 
 
-$result = mysqli_query($conn, "SELECT * FROM contestant");
+$result = mysqli_query($conn, "SELECT * FROM contestant WHERE Contest_ID='$contestid'");
 ?>
 
 <!DOCTYPE html>
@@ -114,7 +103,7 @@ h1 {
       	echo "<p>".$row['Dish_Name']."</p>";
         echo "<h4>Dish Type: </h4>";
         echo "<p>".$row['Dish_Type']."</p>";
-        echo "<form method='POST' action='upload.php' >";
+        echo "<form method='POST' action='upload.php?id=$contestid' >";
         echo "<br><br><h4>Dish Details: </h4>";
         echo "<p>".$row['Dish_Details']."</p>";
         echo "<h4>Score: </h4>";

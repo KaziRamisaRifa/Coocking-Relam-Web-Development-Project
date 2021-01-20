@@ -14,8 +14,8 @@
     $contest_type = mysqli_real_escape_string($conn, $_POST['contest_type']);
     $contest_details = mysqli_real_escape_string($conn, $_POST['contest_details']);
 
-    $sql = "INSERT INTO contest (Image, Contest_Name, Contest_Type, Contest_Details)
-    VALUES ('$image', '$contest_name' , '$contest_type', '$contest_details');";
+    $sql = "INSERT INTO contest (Image, Contest_Name, Contest_Type, Contest_Details,Contest_Winner, Contest_Status)
+    VALUES ('$image', '$contest_name' , '$contest_type', '$contest_details','Not Declared','Active');";
     mysqli_query($conn, $sql);
 
     	}
@@ -26,11 +26,30 @@
               $sql = "DELETE FROM contest WHERE contest.Contest_ID = '$contestid'";
               // execute query
               mysqli_query($conn, $sql);
-
-
     }
 
-  
+    if (isset($_POST['winner'])) {
+      $contestid = strip_tags($_POST['winner_code']);
+    $sql = "SELECT User_Name, MAX(Score)
+FROM contestant
+WHERE Contestant_ID='$contestid'
+GROUP BY User_Name;";
+    $result =  mysqli_query($conn, $sql);
+    $row = mysqli_fetch_array($result);
+    $UserName= $row["User_Name"];
+
+    $sql = "UPDATE contest
+SET Contest_Winner='$UserName'
+WHERE User_Name='$UserName' ";
+mysqli_query($conn, $sql);
+
+
+
+
+
+  }
+
+
 
 
 
@@ -67,18 +86,30 @@ h1 {
       	echo "<p>".$row['Contest_Name']."</p>";
         echo "<h4>Contest Type: </h4>";
         echo "<p>".$row['Contest_Type']."</p>";
+        echo "<h4>Contest Status: </h4>";
+        echo "<p>".$row['Contest_Status']."</p>";
+        echo "<h4>Contest Winner: </h4>";
+        echo "<p>".$row['Contest_Winner']."</p>";
         echo "<form method='POST' action='contest_admin.php' >";
-        echo "<br><br><br><br><h4>Contest Details: </h4>";
+        echo "<br><br><h4>Contest Details: </h4>";
         echo "<p>".$row['Contest_Details']."</p>";
-        echo "<h4>Code for delete: </h4>";
+        echo "<h4>Contest Code: </h4>";
         echo "<p>".$row['Contest_ID']."</p>";
         echo "<textarea
         	id='text'
-        	cols='20'
+        	cols='25'
         	rows='1'
         	name='contest_code'
-        	placeholder='Code for delete contest'></textarea><br>";
+        	placeholder='Type contest code'></textarea><br>";
         echo "<button type='submit' name='del_contest'>Delete Contest</button>";
+        echo "<textarea
+        	id='text'
+        	cols='25'
+        	rows='1'
+        	name='winner_code'
+        	placeholder='Type contest code'></textarea><br>";
+        echo "<h4><br>Declare Winner: </h4>";
+        echo "<button type='submit' name='winner'>Press To Declare</button>";
         echo "</form>";
       echo "</div>";
     }
