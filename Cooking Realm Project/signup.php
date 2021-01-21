@@ -57,7 +57,7 @@ window.location.href='signup.php';
  $sql="INSERT INTO user(User_Name, First_Name, Last_Name, Date_of_birth, Country, Contact_Number, Email, Password)
 VALUES ('$uname','$fname','$lname','$birth','$country','$contact','$email','$pass')";
 mysqli_query($conn, $sql);
-
+header("Location: user_login.php");
 
 }
 
@@ -117,10 +117,10 @@ mysqli_query($conn, $sql);
         <select class="option" name="country" value="">
           <option disabled="disabled" selected="selected">Choose Option</option>
           <option> Bangladesh </option>
-          <option> America </option>
+          <option> India </option>
           <option> China </option>
           <option> Japan </option>
-          <option> Germany </option>
+          <option> Pakistan </option>
           <option> Kuwait </option>
         </select>
 

@@ -37,7 +37,7 @@ if (mysqli_num_rows($result) > 0) {
       WHERE User_Name='$dbUsname' ";
       // execute query
       mysqli_query($conn, $sql);
-        header("Location: user_login.php");
+        header("Location: thanks.php");
 
     }
   }

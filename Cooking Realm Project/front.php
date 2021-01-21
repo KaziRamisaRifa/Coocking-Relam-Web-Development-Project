@@ -24,7 +24,8 @@
                     <img src="Images/first.jpg">
                     <div class="Features__image-text">
                       <h3>Video Recipes</h3>
-                      <p>Most Popular Tasty Recipe Videos You Can Make At Home Any Time</p>
+                      <a href="coming_soon.php">
+                      <p>Most Popular Tasty Recipe Videos You Can Make At Home Any Time</p></a>
                     </div>
                   </div>
                 </div>
@@ -47,7 +48,8 @@
                     <img src="Images/third.jpg">
                     <div class="Features__image-text">
                       <h3>Easy 5 Minutes Recipes</h3>
-                      <p>5 Minutes Easy and Yummy Instant Recipes To Try At Home In A Simple Way</p>
+                      <a href="coming_soon.php">
+                      <p>5 Minutes Easy and Yummy Instant Recipes To Try At Home In A Simple Way</p></a>
                     </div>
                   </div>
                 </div>
@@ -58,7 +60,8 @@
                   <img src="Images/others3.jpg">
                   <div class="Features__image-text">
                     <h3>Nutrition Info</h3>
-                    <p>Nutrition Facts that helps you determine if you have a healthy, balanced diet</p>
+                    <a href="coming_soon.php">
+                    <p>Nutrition Facts that helps you determine if you have a healthy, balanced diet</p></a>
                  </div>
                 </div>
               </div>
@@ -69,7 +72,8 @@
                     <img src="Images/others4.jpg">
                     <div class="Features__image-text">
                       <h3>Chef's Recipes</h3>
-                      <p>Professional Chef Recipes Shared By Chef's From All Around The World.</p>
+                      <a href="coming_soon.php">
+                      <p>Professional Chef Recipes Shared By Chef's From All Around The World.</p></a>
                    </div>
                   </div>
                 </div>
@@ -80,7 +84,8 @@
                       <img src="Images/hackss.jpg">
                       <div class="Features__image-text">
                         <h3>Kitchen Hacks</h3>
-                        <p>Easy Kitchen Hacks To Help You Cook Better Than A Pro Cooker</p>
+                        <a href="coming_soon.php">
+                        <p>Easy Kitchen Hacks To Help You Cook Better Than A Pro Cooker</p></a>
                      </div>
                     </div>
                   </div>
@@ -107,7 +112,7 @@
                           <div class="col-md-8">
                                 <h1>Contest</h1>
                                 <p>Upload your recipes along with pictures to get a chance to win a contest and get a certificate! </p>
-                                <a href="#" class="botton2">Participate Now</a>
+                                <a href="contest_user.php" class="botton2">Participate Now</a>
                           </div>
                         </div>
                       </div>

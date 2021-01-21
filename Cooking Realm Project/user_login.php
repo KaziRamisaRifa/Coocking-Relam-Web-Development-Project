@@ -87,10 +87,10 @@ if (mysqli_num_rows($result) > 0) {
     </div><!--end of the log-sign-->
 
     <div class="social-media"><!--sign up by fb and tw-->
-    <button class="btn1"> <i class="fa fa-facebook"></i> Sign up with google</a>
+    <button class="btn1"> <i class="fa fa-google"></i> Sign up with google</a>
     </button>
 
-    <button class="btn2"> <i class="fa fa-google"></i> Sign up with facebook</a>
+    <button class="btn2"> <i class="fa fa-facebook"></i> Sign up with facebook</a>
     </button>
   </div>
 

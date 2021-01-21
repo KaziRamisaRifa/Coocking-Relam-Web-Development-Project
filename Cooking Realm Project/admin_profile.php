@@ -30,7 +30,7 @@ $username =  $_GET['id'];
   <p></p>
 
   <p><button><a href="contest_admin.php">Update Contest</button></p><br>
-  <p><button>Update Recipes</button></p><br>
+  <p><button><a href="recipes_update.php">Update Recipes</button></p><br>
   <p><button><a href="feedback_admin.php">Feedback Review</button></p><br>
 </div>
 

@@ -102,7 +102,7 @@ $result = mysqli_query($conn, "SELECT * FROM user WHERE User_Name='$username'");
 h1 {
   text-align: center;
 }</style>
-    <h1> Contest </h1>
+    <h1> Edit Profile </h1>
               </header>
 <div id="content">
   <?php
@@ -127,7 +127,7 @@ h1 {
         	placeholder='Set Password'></textarea><br>";
         echo "<button type='submit' name='edit_pass'>Edit Password</button>";
 
-        echo "<br><br><button type='submit' name='delete_user'>Delte User</button>";
+        echo "<br><br><button type='submit' name='delete_user'>Delete User</button>";
         echo "</form>";
 
     }

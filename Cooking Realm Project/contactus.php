@@ -37,7 +37,7 @@ include 'connection.php';
                 <h5>Farida Yeasmin Mim</h5>
                 <p>Designer</p>
                 <div class="social-links">
-                  <a href=""><span class="fa fa-facebook"></span></a>
+                  <a href="https://www.facebook.com/yeasminmim"><span class="fa fa-facebook"></span></a>
                   <a href=""><span class="fa fa-instagram"></span></a>
                   <a href=""><span class="fa fa-twitter"></span></a>
                   <a href=""><span class="fa fa-linkedin"></span></a>
@@ -55,7 +55,7 @@ include 'connection.php';
                 <h5>Kazi Ramisa Rifa</h5>
                 <p>Designer</p>
                 <div class="social-links">
-                  <a href=""><span class="fa fa-facebook"></span></a>
+                  <a href="https://www.facebook.com/ramisa.rifa01/"><span class="fa fa-facebook"></span></a>
                   <a href=""><span class="fa fa-instagram"></span></a>
                   <a href=""><span class="fa fa-twitter"></span></a>
                   <a href=""><span class="fa fa-linkedin"></span></a>
@@ -73,7 +73,7 @@ include 'connection.php';
                 <h5>Abid Hossain Fahim</h5>
                 <p>Designer</p>
                 <div class="social-links">
-                  <a href=""><span class="fa fa-facebook"></span></a>
+                  <a href="https://www.facebook.com/abidfahim.bd"><span class="fa fa-facebook"></span></a>
                   <a href=""><span class="fa fa-instagram"></span></a>
                   <a href=""><span class="fa fa-twitter"></span></a>
                   <a href=""><span class="fa fa-linkedin"></span></a>
