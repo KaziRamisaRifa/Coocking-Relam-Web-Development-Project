@@ -1,6 +1,5 @@
 * {box-sizing: border-box;}
 body {
-
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -19,7 +18,7 @@ body {
 }
 
 .About_Cooking_realm{
-  padding: 50px;
+  padding: 20px;
   background-color: #312b7a;
   color:#fafafc;
   margin-top: -70px;
@@ -29,7 +28,7 @@ body {
   width:100%;
   max-height: 100%;
   height: auto;
-  border-radius: 5%;
+  border-radius: 70%;
 
 }
 .About_Cooking_realm h4{

@@ -29,6 +29,6 @@
           <a class="botton margin__top" href="front.php">Get Started</a>
         </div>
       </div>
-
+     <footer><?php include 'footer.php';?></footer>
   </body>
 </html>

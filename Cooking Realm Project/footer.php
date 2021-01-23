@@ -22,16 +22,14 @@ include 'connection.php';
 
 </head>
 <body>
-    <header>
-      <?php include 'header.php';?>
-    </header>
+
 
 <footer class="footer-distributed">
 
 <!-- footer.left-->
 <div class="footer-left">
 <h3>Cooking<span>Realm</span></h3>
-<p class="footer-company-name">Developed and Maintained by Cooking Realm Admins, NSU <br>© 2020 Cooking Realm, Nort South University.<br> All rights reserved.</p>
+<p class="footer-company-name">Developed and Maintained by Cooking Realm Admins, NSU <br>© 2020 Cooking Realm, North South University.<br> All rights reserved.</p>
 </div>
 
 <!-- footer.center-->

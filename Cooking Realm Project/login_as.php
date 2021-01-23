@@ -16,13 +16,15 @@ include 'connection.php';
     <header>
       <?php include 'header.php';?>
     </header>
-    <div class="bground">
-      <div class="bground__text">
-        <h1>Log In</h1>
+    <div class="loginbground">
+      <div class="loginbground__text">
+        <h1>Log In As</h1>
 
         <a class="botton margin__top" href="user_login.php">User</a>
         <a class="botton margin__top" href="admin_login.php">Admin</a>
       </div>
     </div>
+
+    <footer><?php include 'footer.php';?></footer>
   </body>
 </html>
