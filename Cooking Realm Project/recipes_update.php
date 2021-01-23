@@ -27,7 +27,7 @@ $result = mysqli_query($conn, "SELECT * FROM recipe");
 <!DOCTYPE html>
 <html>
 <head>
-<title>Image Upload</title>
+<title>Update Recipes</title>
 <link rel="stylesheet" href="CSS/upload.css">
 
 <!-- Bootstrap Grid System-->

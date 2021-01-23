@@ -16,8 +16,7 @@ include 'connection.php';
     <header>
       <?php include 'header.php';?>
     </header>
-    <div class="bground">
-      <div class="bground__text">
+    
         <h1>Coming Soon...</h1>
 
       </div>

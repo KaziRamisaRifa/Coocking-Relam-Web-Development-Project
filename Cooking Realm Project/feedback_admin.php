@@ -9,7 +9,7 @@ $result = mysqli_query($conn, "SELECT * FROM feedback");
 <!DOCTYPE html>
 <html>
 <head>
-<title>Image Upload</title>
+<title>See Feedback</title>
 <link rel="stylesheet" href="CSS/upload.css">
 
 <!-- Bootstrap Grid System-->

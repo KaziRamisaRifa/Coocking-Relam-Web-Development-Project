@@ -73,8 +73,6 @@ if (mysqli_num_rows($result) > 0) {
     <?php include 'header.php';?>
   </header>
 
-  <div class="feedbackBground">
-
 <div class="view">
 	<img src="">
 </div>

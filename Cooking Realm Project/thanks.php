@@ -5,7 +5,7 @@ include 'connection.php';
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Thank You</title>
 
     <link rel="stylesheet" href="CSS/login_as.css">
 
@@ -16,9 +16,10 @@ include 'connection.php';
     <header>
       <?php include 'header.php';?>
     </header>
-    <div class="bground">
-      <div class="bground__text">
-        <h1>Thank You For Responding!</h1>
+
+    <div class="loginbground">
+      <div class="loginbground__text">
+        <h1>Thank You For Responding :)</h1>
 
       </div>
     </div>

@@ -5,7 +5,7 @@ include 'connection.php';
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Log In As</title>
 
     <link rel="stylesheet" href="CSS/login_as.css">
 

@@ -22,7 +22,7 @@ $result = mysqli_query($conn, "SELECT * FROM contest");
 <!DOCTYPE html>
 <html>
 <head>
-<title>Image Upload</title>
+<title>Contest</title>
 <link rel="stylesheet" href="CSS/upload.css">
 
 <!-- Bootstrap Grid System-->

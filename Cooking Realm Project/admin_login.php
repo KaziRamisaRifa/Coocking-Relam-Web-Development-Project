@@ -39,7 +39,7 @@ if (mysqli_num_rows($result) > 0) {
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-wiidth,initial-scale=1">
-    <title>Log In</title>
+    <title>Admin Log In</title>
 
     <!-- login.css-->
     <link rel="stylesheet" href="CSS/admin_login.css">
