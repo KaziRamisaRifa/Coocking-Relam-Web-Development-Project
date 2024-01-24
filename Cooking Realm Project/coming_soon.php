@@ -17,7 +17,7 @@ include 'connection.php';
       <?php include 'header.php';?>
     </header>
     
-        <h1>Coming Soon...</h1>
+        <h1>Coming Soon template for future Integrations...</h1>
 
       </div>
     </div>
