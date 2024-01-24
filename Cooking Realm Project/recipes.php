@@ -14,7 +14,6 @@ $result = mysqli_query($conn, "SELECT * FROM recipe");
 <!-- Bootstrap Grid System-->
 <link rel="stylesheet" href="CSS/bootstrap-grid.css">
 
-
 </style>
 </head>
 <body>
