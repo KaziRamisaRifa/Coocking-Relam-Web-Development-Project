@@ -2,8 +2,6 @@
   // Create database connection
   include 'connection.php';
 
-
-
 $result = mysqli_query($conn, "SELECT * FROM recipe");
 ?>
 
@@ -45,7 +43,6 @@ h1 {
     }
 
   ?>
-
 
 </div>
 </body>
