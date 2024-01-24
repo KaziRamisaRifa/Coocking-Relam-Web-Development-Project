@@ -35,7 +35,7 @@ include 'connection.php';
 
         <div class="col-md-8">
           <h4>About Cooking Realm</h4>
-           <p> Cooking is a process that often becomes a great pastime for many people. Here you can find a vast number of recipes, learn diffent cooking skills and upload recipes along with photos of the dish. There are many exciting events and contests for the users. Moreover, a user can buy membership and get many benefits than the regular user. There are also have some amazing features. </p>
+           <p> Cooking is a process that often becomes a great pastime for many people. Here you can find a vast number of recipes, learn different cooking skills, and upload recipes along with photos of the dish. There are many exciting events and contests for the users. Moreover, a user can buy membership and get many benefits than the regular user. There are also some amazing features. </p>
           <a href="front.php" class="botton">See More</a>
         </div>
 
