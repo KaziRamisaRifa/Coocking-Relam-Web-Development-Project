@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
@@ -11,7 +12,6 @@
 
   <!-- Bootstrap Grid System-->
   <link rel="stylesheet" href="CSS/bootstrap-grid.css">
-
 
   </head>
 
