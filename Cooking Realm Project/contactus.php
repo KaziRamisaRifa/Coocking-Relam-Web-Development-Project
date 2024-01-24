@@ -13,7 +13,6 @@ include 'connection.php';
 
   </head>
   <body>
-
     <header>
       <?php include 'header.php';?>
     </header>
@@ -62,9 +61,7 @@ include 'connection.php';
                 </div>
               </div>
             </div>
-
           </div>
-
           <div class="member">
             <img src="Images/Abid.jpg">
 
@@ -80,13 +77,9 @@ include 'connection.php';
                 </div>
               </div>
             </div>
-
           </div>
-
         </div>
-
       </div>
-
     </div>
     </div>
     <footer><?php include 'footer.php';?></footer>
