@@ -11,12 +11,12 @@ This project is a part of the CSE311 Database Management System Course at North 
 3. HTML, CSS
 
 ## Installation
+
 1. Clone the repository.
 2. Install the dependencies using `npm install`.
 3. Start the development server using `npm run dev`
 
 ## Usage
-
 1. Navigate to `http://localhost:3000` in your browser.
 2. Register a new account or log in with an existing one.
 3. Browse recipes, post your own, and interact with other users.
