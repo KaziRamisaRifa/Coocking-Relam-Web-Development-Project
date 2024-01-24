@@ -4,8 +4,6 @@
 
 $username =  $_GET['id'];
 
-
-
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
