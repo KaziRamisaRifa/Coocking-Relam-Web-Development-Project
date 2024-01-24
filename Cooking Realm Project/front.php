@@ -125,7 +125,7 @@
                           </div>
                           <div class="col-md-8">
                                 <h1>Membership</h1>
-                                <p>Get a opportunity to access more facilities including exclusive features!</p>
+                                <p>Get an opportunity to access more facilities including exclusive features!</p>
                                 <a href="#" class="botton2">Get Membership</a>
                           </div>
                         </div>
@@ -135,14 +135,9 @@
                   </div>
                 </div>
               </div>
-
-
-
           <!-- FeedBack section-->
           <div class="FeedBack">
 
           </div>
-
-
   </body>
 </html>
