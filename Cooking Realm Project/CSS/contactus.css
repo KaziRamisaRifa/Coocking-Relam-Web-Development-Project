@@ -2,7 +2,7 @@
 padding: 70px 15px;
 background-color: #306180;
 min-height: 100vh;
-
+  
 }
 .container{
   max-width: 1170px;
@@ -88,7 +88,6 @@ transform: translateY(-20px);
 .social-links{
   padding-top: 10px;
 }
-
 .social-links a{
   display: inline-block;
   height: 32px;
