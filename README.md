@@ -30,10 +30,4 @@ This project is a part of the CSE311 Database Management System Course at NSU
 
 ## Credits
 
-This project was created by [KaziRamisaRifa](https://github.com/kaziramisarifa).
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-Please let me know if you need further assistance. 😊
+This project was created by [KaziRamisaRifa](https://github.com/kaziramisarifa) as a part of a database management course project back in Dec 2020.
