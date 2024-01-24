@@ -147,8 +147,6 @@ header("Location: user_login.php");
       <button type="submit" name="sign">Submit</button>
 </div>
 
-
-
 </div>
 
   </body>
