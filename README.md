@@ -1,7 +1,8 @@
 # Cooking Realm Web Development Project
 
 This project involves creating a backend system where users can share and browse recipes. You need to implement user roles (regular users and administrators), with users able to post recipes, comment, and rate them. Recipes should have categories, ingredients, cooking instructions, and nutritional information.
-This project is a part of the CSE311 Database Management System Course at NSU
+
+This project is a part of the CSE311 Database Management System Course at North South University
 
 # Requirements 
 
@@ -12,7 +13,7 @@ This project is a part of the CSE311 Database Management System Course at NSU
 ## Installation
 1. Clone the repository.
 2. Install the dependencies using `npm install`.
-3. Start the development server using `npm run dev`.
+3. Start the development server using `npm run dev`
 
 ## Usage
 
