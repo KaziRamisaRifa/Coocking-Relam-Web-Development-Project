@@ -7,8 +7,6 @@
 
   // If upload button is clicked ...
 
-
-
   if (isset($_POST['participate'])) {
     $contestid = strip_tags($_POST['contest_code']);
     // execute query
